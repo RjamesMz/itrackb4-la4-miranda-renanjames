@@ -6,7 +6,7 @@ A1 The order of my routes are the featured route should always be at the top od 
 
 Q2 What happens when someone visits an id that does not exist in your data, and what did you write to make that happen?
 
-A2 When someone putes a random number that is not existent on my data source it would be flagged by the controller and sent to a 404 not found page, we wrote a guard clause where if a data does not exits it will run a helper that diplays the 404 not found page or "abort(404)" 
+A2 When someone puts a random number that is non existent in my data source it would be flagged by the controller and sent to a 404 not found page, we wrote a guard clause where if a data does not exits it will run a helper that diplays the 404 not found page or "abort(404)" 
 
 Q3 Why do your links use route names instead of typed URLs? Give one concrete thing that would break if they did not.
 
