@@ -10,4 +10,6 @@ Route::get('/whoami', function () {
 });
 Route::get('/medicines', [MedicineController::class, 'index']);
 
+Route::get('/medicines/featured/{id?}', [MedicineController::class, 'show']);
+
 Route::get('/medicines/{id}', [MedicineController::class, 'show']);
