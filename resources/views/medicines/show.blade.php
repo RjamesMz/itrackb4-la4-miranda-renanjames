@@ -11,7 +11,7 @@
         <p>Expiry Date: {{ $medicine['expiry_date'] }}</p>
         <p>Type: {{ $medicine['type'] }}</p>
         <p>Available: {{ $medicine['is_available'] }}</p>
-        <a href="/medicicines">Go Back</a>
+        <a href="/medicines">Go Back</a>
        
     </body>
 </html>

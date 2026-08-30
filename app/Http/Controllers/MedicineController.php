@@ -6,11 +6,24 @@ use Illuminate\Http\Request;
 
 class MedicineController extends Controller
 {
-    public function index()
+    public function index($type = null)
     {
-     $medicines = $this->medicines();
+        
+        $medicines = $this->medicines();
+        $result = [];
 
-      return view('medicines.index',['medicines' => $medicines]);
+       foreach ($medicines as $medicine) {
+                if ($type == null) {
+                    $result[] = $medicine;
+                } elseif ($medicine['type'] == $type) {
+                    $result[] = $medicine;
+                }
+            }
+
+            return view('medicines.index', [
+                'medicines' => $result,
+                'filter' => $type,
+            ]);
 
     }
     public function show($id = 5)
