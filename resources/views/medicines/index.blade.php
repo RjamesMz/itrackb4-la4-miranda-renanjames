@@ -25,7 +25,7 @@
         @foreach ($medicines as $medicine)
             <tr>
                 <td>
-                    <a href="{{ url('/medicines/' . $medicine['id']) }}"> 
+                    <a href="{{ route('medicine.show', $medicine['id']) }}"> 
                 {{ $medicine['name'] }}
                     </a>
                  </td>
