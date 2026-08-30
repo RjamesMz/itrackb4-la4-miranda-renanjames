@@ -10,4 +10,4 @@ A2 When someone puts a random number that is non existent in my data source it w
 
 Q3 Why do your links use route names instead of typed URLs? Give one concrete thing that would break if they did not.
 
-A3 Route names are better than hard coded url. Route names makes changing the url pattern easier, rather than changeing each hardcoded url you would only need to change the url pattern and the route stil works. Its like remembering the place like "Jollibe" instead of memorizing the complete address, so if the address of the place change the "name" is still the same
+A3 Route names are better than hard coded url. Route names makes changing the url pattern easier, rather than changing each hardcoded url you would only need to change the url pattern and the route stil works. Its like remembering the place like "Plaza" instead of memorizing the complete address, so if the address of the place change the "name" is still the same
