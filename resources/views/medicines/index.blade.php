@@ -16,7 +16,11 @@
  
         @foreach ($medicines as $medicine)
             <tr>
-                <td>{{ $medicine['name'] }}</td>
+              <td>
+                    <a href="{{ url('/medicines/' . $medicine['id']) }}"> 
+                {{ $medicine['name'] }}
+                    </a>
+            </td>
                 <td>{{ $medicine['stock'] }}</td>
                 <td>{{ $medicine['expiry_date'] }}</td>
             </tr>

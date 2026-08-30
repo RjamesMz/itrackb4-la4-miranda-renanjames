@@ -9,3 +9,5 @@ Route::get('/whoami', function () {
     return 'Renan James Z. Miranda| 2023-70705 | Block 4C | ITRACKB4 Laravel 12';
 });
 Route::get('/medicines', [MedicineController::class, 'index']);
+
+Route::get('/medicines/{id}', [MedicineController::class, 'show']);
