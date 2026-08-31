@@ -6,9 +6,16 @@ use Illuminate\Http\Request;
 
 class MedicineController extends Controller
 {
-    public function index($type = null)
+    public function index()
     {
         
+         return view('medicines.index',['medicines' => $this->medicines()]);
+
+    }
+
+    public function filter($type = null)
+    {
+
         $medicines = $this->medicines();
         $result = [];
 
@@ -20,7 +27,7 @@ class MedicineController extends Controller
                 }
             }
 
-            return view('medicines.index', [
+            return view('medicines.filter', [
                 'medicines' => $result,
                 'filter' => $type,
             ]);
@@ -45,7 +52,6 @@ class MedicineController extends Controller
     {
         return [
 
-            
             1 => ['id' => 1, 'name' => 'Paracetamol', 'stock' => 150, 'expiry_date' => '2027-03-15', 'type' => 'Tablet', 'is_available' => true],
             2 => ['id' => 2, 'name' => 'Amoxicillin', 'stock' => 80, 'expiry_date' => '2026-11-20', 'type' => 'Capsule', 'is_available' => true],
             3 => ['id' => 3, 'name' => 'Losartan', 'stock' => 40, 'expiry_date' => '2026-12-25', 'type' => 'Tablet', 'is_available' => true],
