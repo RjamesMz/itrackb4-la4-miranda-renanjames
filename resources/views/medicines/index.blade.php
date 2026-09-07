@@ -24,7 +24,11 @@
                 <td>{{ $medicine['expiry_date'] }}</td>
             </tr>
         @empty
-            <p>No Medicine Found</p>
+             <tr>
+                <td colspan="4">  
+                    <b >No Medicine Found </b>
+                </td>
+            </tr>
         @endforelse
     </table>
 @endsection
