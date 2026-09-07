@@ -1,5 +1,4 @@
 
-
 @extends('layouts.app')
 
 @section('title', 'All Medicines')
@@ -41,7 +40,7 @@
                     <b >No Medicine Found </b>
                 </td>
             </tr>
-            
+
         @endforelse
     </table>
 @endsection
