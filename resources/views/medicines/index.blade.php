@@ -13,7 +13,7 @@
             <th>Expiry Date</th>
         </tr>
  
-        @foreach ($medicines as $medicine)
+        @forelse ($medicines as $medicine)
             <tr>
                 <td>
                     <a href="{{ route('medicine.show', $medicine['id']) }}"> 
@@ -23,6 +23,8 @@
                 <td>{{ $medicine['stock'] }}</td>
                 <td>{{ $medicine['expiry_date'] }}</td>
             </tr>
-        @endforeach
+        @empty
+            <p>No Medicine Found</p>
+        @endforelse
     </table>
 @endsection
