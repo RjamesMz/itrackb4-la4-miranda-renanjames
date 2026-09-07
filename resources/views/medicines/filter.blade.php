@@ -1,15 +1,11 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Medicine List</title>
-</head>
-<body>
-    <h1>My Medicine List</h1>
-    <p>Prepared by: Renan James Z. Miranda | 2023-70705</p>
+@extends('layouts.app')
 
-    
-    @if ($filter)
+@section('title', $filter ?: 'All Medicines' )
+
+@section('content')
+    <table>
+         @if ($filter)
         <p>Showing items filtered by: {{ $filter }}</p>
     @else
         <p>Showing all items.</p>
@@ -35,6 +31,6 @@
             </tr>
         @endforeach
     </table>
-</body>
-</html>
+@endsection
+
 

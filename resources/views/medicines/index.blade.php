@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Medicine List</title>
-</head>
-<body>
-    <h1>My Medicine List</h1>
-    <p>Prepared by: Renan James Z. Miranda | 2023-70705</p>
- 
+
+
+@extends('layouts.app')
+
+@section('title', 'All Medicines')
+
+@section('content')
+   
     <table border="1" cellpadding="8">
         <tr>
             <th>Name</th>
@@ -26,5 +25,4 @@
             </tr>
         @endforeach
     </table>
-</body>
-</html>
+@endsection
