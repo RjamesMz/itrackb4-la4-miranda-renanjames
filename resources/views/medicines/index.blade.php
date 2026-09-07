@@ -5,7 +5,7 @@
 
 @section('content')
    
-    <table border="1" cellpadding="8">
+    <table class="table table-striped table-primary" border="1" cellpadding="8">
         <tr>
             <th>No.</th>
             <th>Name</th>

@@ -11,6 +11,6 @@
         <p>Expiry Date: {{ $medicine['expiry_date'] }}</p>
         <p>Type: {{ $medicine['type'] }}</p>
         <p>Available: {{ $medicine['is_available'] }}</p>
-        <a href="{{ route('medicines.index') }}">Go Back</a>
+        <a href="{{ route('medicines.index') }}" class="btn btn-primary">Go Back</a>
 
 @endsection

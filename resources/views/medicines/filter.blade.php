@@ -10,8 +10,8 @@
     @else
         <p>Showing all items.</p>
     @endif
-
-     <table border="1">
+   
+     <table class="table table-striped table-primary" border="1">
         <tr>
             <th>No.</th>
             <th>Name</th>
